@@ -2,72 +2,67 @@
 <html lang="en">
   <head>
     <!-- Primary Meta Tags -->
-    <title>Lula Liberdade — Gerar flyer de apoio ao Lula com seu nome</title>
+    <title>Puxirum do ICED- Gerar apoio à CHAPA 02</title>
     <meta
       name="title"
-      content="Lula Liberdade — Gerar flyer de apoio ao Lula com seu nome"
+      content="Puxirum do ICED- Gerar apoio à CHAPA 02"
     />
     <meta
       name="description"
-      content="Gere seu flyer personalizado com seu nome de apoio ao Lula"
+      content="Gere seu flyer personalizado com seu nome de apoio ao Prof. Claudir para a Direção do ICED"
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://cristiantela.github.io/lula2turno/liberdade/"
+      content="https://coliverra.github.io/puxirum/liberdade/"
     />
     <meta
       property="og:title"
-      content="Lula Liberdade — Gerar flyer de apoio ao Lula com seu nome"
+      content="Puxirum do ICED- Gerar apoio à CHAPA 02"
     />
     <meta
       property="og:description"
-      content="Gere seu flyer personalizado com seu nome de apoio ao Lula"
+      content="Gere seu flyer personalizado com seu nome de apoio ao Prof. Claudir para a Direção do ICED"
     />
     <meta
       property="og:image"
       itemprop="image"
-      content="https://cristiantela.github.io/lula2turno/liberdade/metadata.png"
+      content="https://coliverra.github.io/puxirum/liberdade/metadata.png"
     />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://cristiantela.github.io/lula2turno/liberdade/"
+      content="https://coliverra.github.io/puxirum/liberdade/"
     />
     <meta
       property="twitter:title"
-      content="Lula Liberdade — Gerar flyer de apoio ao Lula com seu nome"
+      content="Puxirum do ICED- Gerar apoio à CHAPA 02"
     />
     <meta
       property="twitter:description"
-      content="Gere seu flyer personalizado com seu nome de apoio ao Lula"
+      content="Gere seu flyer personalizado com seu nome de apoio ao Prof. Claudir para a Direção do ICED"
     />
     <meta
       property="twitter:image"
-      content="https://cristiantela.github.io/lula2turno/liberdade/metadata.png"
+      content="https://coliverra.github.io/puxirum/metadata.png"
     />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haddad 2° Turno</title>
+    <title>Prof. Claudir 2° Turno</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Signika:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
 
     <style>
-      @font-face {
-        font-family: integral-cf-bold;
-        src: url(../fonts/integral-cf-bold.otf) format("opentype");
-      }
-
       body {
         background-color: rgb(21, 21, 21);
         font-size: 18px;
@@ -93,11 +88,11 @@
       }
 
       .navbar a img {
-        height: 1.2rem;
+        /* height: 1.2rem; */
       }
 
       .navbar a img.preview {
-        height: 2rem;
+        width: 2rem;
         border: 1px solid #f5c012;
       }
 
@@ -133,11 +128,18 @@
         background-color: #107b29;
         color: white;
         cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .container button img {
+        height: 1rem;
       }
 
       .container canvas {
         display: block;
-        width: 30%;
+        width: 80%;
         margin: 0 auto;
         margin-bottom: 1rem;
       }
@@ -152,9 +154,9 @@
       }
 
       .container footer a {
+        color: #f5c012;
         text-decoration: none;
         column-gap: 0.25rem;
-        color: inherit;
       }
 
       .container footer a {
@@ -205,7 +207,6 @@
         color: #f5c012;
         text-decoration: underline;
         text-underline-offset: 0.5rem;
-        font-weight: bold;
       }
 
       .container smartphone a:hover {
@@ -233,20 +234,21 @@
 
       gtag("config", "G-XG904CQWTP");
     </script>
+    <script src="js/clipboardtext.js"></script>
   </head>
   <body>
     <div class="navbar">
       <div class="container">
-        <a href="../photo/">
-          <img src="../img/right-arrow-svgrepo.svg" />
-          <img src="../photo/metadata.png" class="preview" />
-          Acessar o gerador de filtro do Lula com sua foto
+        <a href="photo/">
+          <img src="img/right-arrow-svgrepo.svg" />
+          <img src="photo/metadata.png" class="preview" />
+          Acessar o gerador de filtro com sua foto
         </a>
 
-        <a href="../linear/">
-          <img src="../img/right-arrow-svgrepo.svg" />
-          <img src="../linear/metadata.png" class="preview" />
-          Acessar o gerador de tag do Lula
+        <a href="liberdade/">
+          <img src="img/right-arrow-svgrepo.svg" />
+          <img src="liberdade/metadata.png" class="preview" />
+          Acessar o gerador com a palavra Puxirum
         </a>
       </div>
     </div>
@@ -254,39 +256,32 @@
     <div class="container">
       <input type="text" />
 
-      <button>Salvar Imagem</button>
+      <button class="save">Salvar Imagem</button>
+      <button class="share">
+        Compartilhar Imagem
+        <img src="img/share.svg" />
+      </button>
 
-      <canvas width="1080" height="1920"></canvas>
+      <canvas width="1080" height="1080"></canvas>
 
       <smartphone>
-        Olá, me chamo Matheus Cristian, estou em período de mudança para uma
-        casa nova, colabore com meu chá de casa nova com qualquer valor através
-        do pix, segue minha chave pix:
-        <b>mathues@email.com</b> ou
-        <a href="https://nubank.com.br/pagar/199pu6/OH6ITDqcpU" target="_blank">
+        Somos a CHAPA PUXIRUM. 
+        <b>coliverra@gmail.com</b> ou
+        <a href="www.puxirumdoiced.com" target="_blank">
           clicando aqui neste link do Nubank
-          <img src="../img/nubank-logo.svg" class="nubank" />
+          <img src="img/qrcode.svg" class="nubank" />
         </a>
       </smartphone>
 
       <footer>
         Desenvolvido por:
 
-        <a href="https://www.instagram.com/cristianfrontend/" target="_blank">
-          <img src="../img/cristiantela-profile.png" class="profile" />
-          <img src="../img/instagram-logo.svg" />
-          <span><b>cristian</b>frontend</span>
+        <a href="https://www.instagram.com/puxirum.iced/" target="_blank">
+          <img src="img/claud.jpg" class="profile" />
+          <img src="img/instagram-logo.svg" />
+          <span><b>claudir</b>frontend</span>
         </a>
 
-        <a href="https://www.linkedin.com/in/cristiantela/" target="_blank">
-          <img src="../img/linkedin-logo.svg" />
-          <span>cristiantela</span>
-        </a>
-
-        <a href="https://github.com/cristiantela/lula2turno" target="_blank">
-          <img src="../img/github-logo.svg" />
-          <span>cristiantela/lula2turno</span>
-        </a>
       </footer>
     </div>
 
@@ -461,15 +456,38 @@
       document.querySelector("input").value =
         names[Math.floor(Math.random() * names.length)];
 
-      document.querySelector("button").addEventListener("click", () => {
+      document.querySelector("button.save").addEventListener("click", () => {
         gtag("event", "download");
         const a = document.createElement("a");
         a.setAttribute("href", canvas.toDataURL("image/png"));
         a.setAttribute(
           "download",
-          document.querySelector("input").value.trim().toUpperCase()
+          document.querySelector("input").value.trim()
         );
         a.click();
+      });
+
+      document.querySelector("button.share").addEventListener("click", () => {
+        gtag("event", "share");
+
+        canvas.toBlob((blob) => {
+          const filesArray = [
+            new File(
+              [blob],
+              document.querySelector("input").value.trim() + ".jpg",
+              {
+                type: "image/jpeg",
+                lastModified: new Date().getTime(),
+              }
+            ),
+          ];
+
+          const shareData = {
+            files: filesArray,
+          };
+
+          navigator.share(shareData);
+        });
       });
 
       function roundRect(
@@ -513,21 +531,31 @@
 
           context.save();
 
-          context.translate(100, 255);
-
-          const name = document
-            .querySelector("input")
-            .value.trim()
-            .toUpperCase();
+          context.translate(540, 348);
+          context.rotate((-2 * Math.PI) / 180);
 
           context.textBaseline = "middle";
-          context.font = "116px integral-cf-bold";
-          const width = context.measureText(name).width;
+          context.font = "196.13px Bebas Neue";
+          const width = context.measureText(
+            document.querySelector("input").value.trim()
+          ).width;
 
-          const paddingWidth = 15;
+          context.fillStyle = "#1ABC4C";
+          roundRect(
+            context,
+            -width / 2 - 25,
+            -184 / 2,
+            width + 25 * 2,
+            184,
+            21.66
+          );
 
-          context.fillStyle = "#ffffff";
-          context.fillText(name, 0, -5);
+          context.fillStyle = "white";
+          context.fillText(
+            document.querySelector("input").value.trim(),
+            -width / 2,
+            20
+          );
 
           context.restore();
 

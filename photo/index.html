@@ -2,59 +2,59 @@
 <html lang="en">
   <head>
     <!-- Primary Meta Tags -->
-    <title>Lula 2º Turno — Gerar imagem de apoio ao Lula com sua foto</title>
+    <title>Puxirum do ICED- Gerar apoio à CHAPA 02</title>
     <meta
       name="title"
-      content="Lula 2º Turno — Gerar imagem de apoio ao Lula com sua foto"
+      content="Puxirum do ICED- Gerar apoio à CHAPA 02"
     />
     <meta
       name="description"
-      content="Gere sua imagem personalizada com sua foto de apoio ao Lula para o segundo turno das eleições brasileira"
+      content="Gere seu flyer personalizado com seu nome de apoio ao Prof. Claudir para a Direção do ICED"
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://cristiantela.github.io/lula2turno/"
+      content="https://coliverra.github.io/puxirum/photo/"
     />
     <meta
       property="og:title"
-      content="Lula 2º Turno — Gerar imagem de apoio ao Lula com sua foto"
+      content="Puxirum do ICED- Gerar apoio à CHAPA 02"
     />
     <meta
       property="og:description"
-      content="Gere sua imagem personalizada com sua foto de apoio ao Lula para o segundo turno das eleições brasileira"
+      content="Gere seu flyer personalizado com seu nome de apoio ao Prof. Claudir para a Direção do ICED"
     />
     <meta
       property="og:image"
       itemprop="image"
-      content="https://cristiantela.github.io/lula2turno/photo/metadata.png"
+      content="https://coliverra.github.io/puxirum/photo/metadata.png"
     />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://cristiantela.github.io/lula2turno/"
+      content="https://coliverra.github.io/puxirum/photo/"
     />
     <meta
       property="twitter:title"
-      content="Lula 2º Turno — Gerar imagem de apoio ao Lula com sua foto"
+      content="Puxirum do ICED- Gerar apoio à CHAPA 02"
     />
     <meta
       property="twitter:description"
-      content="Gere sua imagem personalizada com sua foto de apoio ao Lula para o segundo turno das eleições brasileira"
+      content="Gere seu flyer personalizado com seu nome de apoio ao Prof. Claudir para a Direção do ICED"
     />
     <meta
       property="twitter:image"
-      content="https://cristiantela.github.io/lula2turno/photo/metadata.png"
+      content="https://coliverra.github.io/puxirum/photo/metadata.png"
     />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lula 2° Turno</title>
+    <title>Prof. Claudir 2° Turno</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -88,11 +88,11 @@
       }
 
       .navbar a img {
-        height: 1.2rem;
+        /* height: 1.2rem; */
       }
 
       .navbar a img.preview {
-        height: 2rem;
+        width: 2rem;
         border: 1px solid #f5c012;
       }
 
@@ -128,6 +128,13 @@
         background-color: #107b29;
         color: white;
         cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .container button img {
+        height: 1rem;
       }
 
       .container canvas {
@@ -200,7 +207,6 @@
         color: #f5c012;
         text-decoration: underline;
         text-underline-offset: 0.5rem;
-        font-weight: bold;
       }
 
       .container smartphone a:hover {
@@ -228,56 +234,54 @@
 
       gtag("config", "G-XG904CQWTP");
     </script>
-    <script src="../js/clipboardtext.js"></script>
+    <script src="js/clipboardtext.js"></script>
   </head>
   <body>
     <div class="navbar">
       <div class="container">
-        <a href="../linear/">
-          <img src="../img/right-arrow-svgrepo.svg" />
-          <img src="../linear/metadata.png" class="preview" />
-          Acessar o gerador de tag
+        <a href="photo/">
+          <img src="img/right-arrow-svgrepo.svg" />
+          <img src="photo/metadata.png" class="preview" />
+          Acessar o gerador de filtro com sua foto
+        </a>
+
+        <a href="liberdade/">
+          <img src="img/right-arrow-svgrepo.svg" />
+          <img src="liberdade/metadata.png" class="preview" />
+          Acessar o gerador com a palavra Puxirum
         </a>
       </div>
     </div>
 
     <div class="container">
-      <input type="file" />
+      <input type="text" />
 
-      <button>Salvar Imagem</button>
+      <button class="save">Salvar Imagem</button>
+      <button class="share">
+        Compartilhar Imagem
+        <img src="img/share.svg" />
+      </button>
 
       <canvas width="1080" height="1080"></canvas>
 
-      
       <smartphone>
-        Olá, me chamo Matheus Cristian, estou em período de mudança para uma
-        casa nova, colabore com meu chá de casa nova com qualquer valor através
-        do pix, segue minha chave pix:
-        <b>mathues@email.com</b> ou
-        <a href="https://nubank.com.br/pagar/199pu6/OH6ITDqcpU" target="_blank">
+        Somos a CHAPA PUXIRUM. 
+        <b>coliverra@gmail.com</b> ou
+        <a href="www.puxirumdoiced.com" target="_blank">
           clicando aqui neste link do Nubank
-          <img src="../img/nubank-logo.svg" class="nubank" />
+          <img src="img/qrcode.svg" class="nubank" />
         </a>
       </smartphone>
 
       <footer>
         Desenvolvido por:
 
-        <a href="https://www.instagram.com/cristianfrontend/" target="_blank">
-          <img src="../img/cristiantela-profile.png" class="profile" />
-          <img src="../img/instagram-logo.svg" />
-          <span><b>cristian</b>frontend</span>
+        <a href="https://www.instagram.com/puxirum.iced/" target="_blank">
+          <img src="img/claud.jpg" class="profile" />
+          <img src="img/instagram-logo.svg" />
+          <span><b>claudir</b>frontend</span>
         </a>
 
-        <a href="https://www.linkedin.com/in/cristiantela/" target="_blank">
-          <img src="../img/linkedin-logo.svg" />
-          <span>cristiantela</span>
-        </a>
-
-        <a href="https://github.com/cristiantela/lula2turno" target="_blank">
-          <img src="../img/github-logo.svg" />
-          <span>cristiantela/lula2turno</span>
-        </a>
       </footer>
     </div>
 
@@ -449,15 +453,41 @@
         "Isabel",
       ];
 
-      // document.querySelector("input").value =
-      // names[Math.floor(Math.random() * names.length)];
+      document.querySelector("input").value =
+        names[Math.floor(Math.random() * names.length)];
 
-      document.querySelector("button").addEventListener("click", () => {
+      document.querySelector("button.save").addEventListener("click", () => {
         gtag("event", "download");
         const a = document.createElement("a");
         a.setAttribute("href", canvas.toDataURL("image/png"));
-        a.setAttribute("download", "image");
+        a.setAttribute(
+          "download",
+          document.querySelector("input").value.trim()
+        );
         a.click();
+      });
+
+      document.querySelector("button.share").addEventListener("click", () => {
+        gtag("event", "share");
+
+        canvas.toBlob((blob) => {
+          const filesArray = [
+            new File(
+              [blob],
+              document.querySelector("input").value.trim() + ".jpg",
+              {
+                type: "image/jpeg",
+                lastModified: new Date().getTime(),
+              }
+            ),
+          ];
+
+          const shareData = {
+            files: filesArray,
+          };
+
+          navigator.share(shareData);
+        });
       });
 
       function roundRect(
@@ -496,9 +526,9 @@
 
       baseImage.addEventListener("load", () => {
         function draw() {
+          context.clearRect(0, 0, canvas.width, canvas.height);
           context.drawImage(baseImage, 0, 0);
 
-          /*
           context.save();
 
           context.translate(540, 348);
@@ -528,62 +558,11 @@
           );
 
           context.restore();
-          */
 
-          // setTimeout(draw, 100);
-
-          document
-            .querySelector('input[type="file"]')
-            .addEventListener("change", (event) => {
-              var file = event.srcElement.files[0];
-              var reader = new FileReader();
-
-              // context.drawImage();
-
-              reader.addEventListener(
-                "load",
-                function () {
-                  console.log(reader);
-                  const photo = new Image();
-                  photo.src = reader.result;
-                  photo.addEventListener("load", () => {
-                    const oldWidth = photo.width;
-                    photo.width = 1080;
-                    photo.height = (1080 / oldWidth) * photo.height;
-
-                    if (photo.height < 1080) {
-                      const oldHeight = photo.height;
-                      photo.height = 1080;
-                      photo.width = (1080 / oldHeight) * photo.width;
-                    }
-                    console.log(photo.height);
-                    context.drawImage(
-                      photo,
-                      0 - (photo.width - 1080) / 2,
-                      0 - (photo.height - 1080) / 2,
-                      photo.width,
-                      photo.height
-                    );
-                    draw();
-                  });
-                },
-                false
-              );
-
-              if (file) {
-                reader.readAsDataURL(file);
-              }
-            });
+          setTimeout(draw, 100);
         }
 
         draw();
-
-        const image = new Image();
-        image.src = "./base-2.png";
-        image.addEventListener("load", () => {
-          context.drawImage(image, 0, 0);
-          draw();
-        });
       });
     </script>
   </body>
