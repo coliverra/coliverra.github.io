@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <!-- Primary Meta Tags -->
-    <title>Lula 2º Turno — Gerar flyer de apoio ao Lula com seu nome</title>
+    <title>Lula 2º Turno — Gerar imagem de apoio ao Lula com sua foto</title>
     <meta
       name="title"
-      content="Lula 2º Turno — Gerar flyer de apoio ao Lula com seu nome"
+      content="Lula 2º Turno — Gerar imagem de apoio ao Lula com sua foto"
     />
     <meta
       name="description"
-      content="Gere seu flyer personalizado com seu nome de apoio ao Lula para o segundo turno das eleições brasileira"
+      content="Gere sua imagem personalizada com sua foto de apoio ao Lula para o segundo turno das eleições brasileira"
     />
 
     <!-- Open Graph / Facebook -->
@@ -20,16 +20,16 @@
     />
     <meta
       property="og:title"
-      content="Lula 2º Turno — Gerar flyer de apoio ao Lula com seu nome"
+      content="Lula 2º Turno — Gerar imagem de apoio ao Lula com sua foto"
     />
     <meta
       property="og:description"
-      content="Gere seu flyer personalizado com seu nome de apoio ao Lula para o segundo turno das eleições brasileira"
+      content="Gere sua imagem personalizada com sua foto de apoio ao Lula para o segundo turno das eleições brasileira"
     />
     <meta
       property="og:image"
       itemprop="image"
-      content="https://cristiantela.github.io/lula2turno/metadata.png"
+      content="https://cristiantela.github.io/lula2turno/photo/metadata.png"
     />
 
     <!-- Twitter -->
@@ -40,15 +40,15 @@
     />
     <meta
       property="twitter:title"
-      content="Lula 2º Turno — Gerar flyer de apoio ao Lula com seu nome"
+      content="Lula 2º Turno — Gerar imagem de apoio ao Lula com sua foto"
     />
     <meta
       property="twitter:description"
-      content="Gere seu flyer personalizado com seu nome de apoio ao Lula para o segundo turno das eleições brasileira"
+      content="Gere sua imagem personalizada com sua foto de apoio ao Lula para o segundo turno das eleições brasileira"
     />
     <meta
       property="twitter:image"
-      content="https://cristiantela.github.io/lula2turno/metadata.png"
+      content="https://cristiantela.github.io/lula2turno/photo/metadata.png"
     />
 
     <meta charset="UTF-8" />
@@ -88,11 +88,11 @@
       }
 
       .navbar a img {
-        /* height: 1.2rem; */
+        height: 1.2rem;
       }
 
       .navbar a img.preview {
-        width: 2rem;
+        height: 2rem;
         border: 1px solid #f5c012;
       }
 
@@ -128,13 +128,6 @@
         background-color: #107b29;
         color: white;
         cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .container button img {
-        height: 1rem;
       }
 
       .container canvas {
@@ -207,6 +200,7 @@
         color: #f5c012;
         text-decoration: underline;
         text-underline-offset: 0.5rem;
+        font-weight: bold;
       }
 
       .container smartphone a:hover {
@@ -234,36 +228,27 @@
 
       gtag("config", "G-XG904CQWTP");
     </script>
-    <script src="js/clipboardtext.js"></script>
+    <script src="../js/clipboardtext.js"></script>
   </head>
   <body>
     <div class="navbar">
       <div class="container">
-        <a href="photo/">
-          <img src="img/right-arrow-svgrepo.svg" />
-          <img src="photo/metadata.png" class="preview" />
-          Acessar o gerador de filtro com sua foto
-        </a>
-
-        <a href="liberdade/">
-          <img src="img/right-arrow-svgrepo.svg" />
-          <img src="liberdade/metadata.png" class="preview" />
-          Acessar o gerador com a palavra Liberdade
+        <a href="../linear/">
+          <img src="../img/right-arrow-svgrepo.svg" />
+          <img src="../linear/metadata.png" class="preview" />
+          Acessar o gerador de tag
         </a>
       </div>
     </div>
 
     <div class="container">
-      <input type="text" />
+      <input type="file" />
 
-      <button class="save">Salvar Imagem</button>
-      <button class="share">
-        Compartilhar Imagem
-        <img src="img/share.svg" />
-      </button>
+      <button>Salvar Imagem</button>
 
       <canvas width="1080" height="1080"></canvas>
 
+      
       <smartphone>
         Olá, me chamo Matheus Cristian, estou em período de mudança para uma
         casa nova, colabore com meu chá de casa nova com qualquer valor através
@@ -271,7 +256,7 @@
         <b>mathues@email.com</b> ou
         <a href="https://nubank.com.br/pagar/199pu6/OH6ITDqcpU" target="_blank">
           clicando aqui neste link do Nubank
-          <img src="img/nubank-logo.svg" class="nubank" />
+          <img src="../img/nubank-logo.svg" class="nubank" />
         </a>
       </smartphone>
 
@@ -279,18 +264,18 @@
         Desenvolvido por:
 
         <a href="https://www.instagram.com/cristianfrontend/" target="_blank">
-          <img src="img/cristiantela-profile.png" class="profile" />
-          <img src="img/instagram-logo.svg" />
+          <img src="../img/cristiantela-profile.png" class="profile" />
+          <img src="../img/instagram-logo.svg" />
           <span><b>cristian</b>frontend</span>
         </a>
 
         <a href="https://www.linkedin.com/in/cristiantela/" target="_blank">
-          <img src="img/linkedin-logo.svg" />
+          <img src="../img/linkedin-logo.svg" />
           <span>cristiantela</span>
         </a>
 
         <a href="https://github.com/cristiantela/lula2turno" target="_blank">
-          <img src="img/github-logo.svg" />
+          <img src="../img/github-logo.svg" />
           <span>cristiantela/lula2turno</span>
         </a>
       </footer>
@@ -464,41 +449,15 @@
         "Isabel",
       ];
 
-      document.querySelector("input").value =
-        names[Math.floor(Math.random() * names.length)];
+      // document.querySelector("input").value =
+      // names[Math.floor(Math.random() * names.length)];
 
-      document.querySelector("button.save").addEventListener("click", () => {
+      document.querySelector("button").addEventListener("click", () => {
         gtag("event", "download");
         const a = document.createElement("a");
         a.setAttribute("href", canvas.toDataURL("image/png"));
-        a.setAttribute(
-          "download",
-          document.querySelector("input").value.trim()
-        );
+        a.setAttribute("download", "image");
         a.click();
-      });
-
-      document.querySelector("button.share").addEventListener("click", () => {
-        gtag("event", "share");
-
-        canvas.toBlob((blob) => {
-          const filesArray = [
-            new File(
-              [blob],
-              document.querySelector("input").value.trim() + ".jpg",
-              {
-                type: "image/jpeg",
-                lastModified: new Date().getTime(),
-              }
-            ),
-          ];
-
-          const shareData = {
-            files: filesArray,
-          };
-
-          navigator.share(shareData);
-        });
       });
 
       function roundRect(
@@ -537,9 +496,9 @@
 
       baseImage.addEventListener("load", () => {
         function draw() {
-          context.clearRect(0, 0, canvas.width, canvas.height);
           context.drawImage(baseImage, 0, 0);
 
+          /*
           context.save();
 
           context.translate(540, 348);
@@ -569,11 +528,62 @@
           );
 
           context.restore();
+          */
 
-          setTimeout(draw, 100);
+          // setTimeout(draw, 100);
+
+          document
+            .querySelector('input[type="file"]')
+            .addEventListener("change", (event) => {
+              var file = event.srcElement.files[0];
+              var reader = new FileReader();
+
+              // context.drawImage();
+
+              reader.addEventListener(
+                "load",
+                function () {
+                  console.log(reader);
+                  const photo = new Image();
+                  photo.src = reader.result;
+                  photo.addEventListener("load", () => {
+                    const oldWidth = photo.width;
+                    photo.width = 1080;
+                    photo.height = (1080 / oldWidth) * photo.height;
+
+                    if (photo.height < 1080) {
+                      const oldHeight = photo.height;
+                      photo.height = 1080;
+                      photo.width = (1080 / oldHeight) * photo.width;
+                    }
+                    console.log(photo.height);
+                    context.drawImage(
+                      photo,
+                      0 - (photo.width - 1080) / 2,
+                      0 - (photo.height - 1080) / 2,
+                      photo.width,
+                      photo.height
+                    );
+                    draw();
+                  });
+                },
+                false
+              );
+
+              if (file) {
+                reader.readAsDataURL(file);
+              }
+            });
         }
 
         draw();
+
+        const image = new Image();
+        image.src = "./base-2.png";
+        image.addEventListener("load", () => {
+          context.drawImage(image, 0, 0);
+          draw();
+        });
       });
     </script>
   </body>
