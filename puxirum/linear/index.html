@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <!-- Primary Meta Tags -->
-    <title>Puxirum do ICED- Gerar apoio à CHAPA 02</title>
+    <title>
+      Puxirum do ICED- Gerar apoio à CHAPA 02
+    </title>
     <meta
       name="title"
-      content="Puxirum do ICED- Gerar apoio à CHAPA 02"
+      content=" Puxirum do ICED- Gerar apoio à CHAPA 02 com seu nome"
     />
     <meta
       name="description"
@@ -20,7 +22,7 @@
     />
     <meta
       property="og:title"
-      content="Puxirum do ICED- Gerar apoio à CHAPA 02"
+      content=" Puxirum do ICED- Gerar apoio à CHAPA 02 com seu nome"
     />
     <meta
       property="og:description"
@@ -36,15 +38,15 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://coliverra.github.io/puxirum/linear/"
+      content="https://coliverra.github.io/puxirum/linear"
     />
     <meta
       property="twitter:title"
-      content="Puxirum do ICED- Gerar apoio à CHAPA 02"
+      content="Lula 2º Turno — Gerar flyer de apoio ao Lula com seu nome"
     />
     <meta
       property="twitter:description"
-      content="Gere seu flyer personalizado com seu nome de apoio ao Prof. Claudir para a Direção do ICED"
+      content="Gere seu flyer personalizado com seu nome de apoio ao Lula para o segundo turno das eleições brasileira"
     />
     <meta
       property="twitter:image"
@@ -54,11 +56,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prof. Claudir e Gilberto Cesar</title>
+    <title>Lula 2° Turno</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Signika:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -88,11 +90,11 @@
       }
 
       .navbar a img {
-        /* height: 1.2rem; */
+        height: 1.2rem;
       }
 
       .navbar a img.preview {
-        width: 2rem;
+        height: 2rem;
         border: 1px solid #f5c012;
       }
 
@@ -128,13 +130,6 @@
         background-color: #107b29;
         color: white;
         cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .container button img {
-        height: 1rem;
       }
 
       .container canvas {
@@ -154,9 +149,9 @@
       }
 
       .container footer a {
-        color: #f5c012;
         text-decoration: none;
         column-gap: 0.25rem;
+        color: inherit;
       }
 
       .container footer a {
@@ -207,6 +202,7 @@
         color: #f5c012;
         text-decoration: underline;
         text-underline-offset: 0.5rem;
+        font-weight: bold;
       }
 
       .container smartphone a:hover {
@@ -234,21 +230,14 @@
 
       gtag("config", "G-XG904CQWTP");
     </script>
-    <script src="js/clipboardtext.js"></script>
   </head>
   <body>
     <div class="navbar">
       <div class="container">
-        <a href="photo/">
-          <img src="img/right-arrow-svgrepo.svg" />
-          <img src="photo/metadata.png" class="preview" />
+        <a href="../photo/">
+          <img src="../img/right-arrow-svgrepo.svg" />
+          <img src="../photo/metadata.png" class="preview" />
           Acessar o gerador de filtro com sua foto
-        </a>
-
-        <a href="linear/">
-          <img src="img/right-arrow-svgrepo.svg" />
-          <img src="linear/metadata.png" class="preview" />
-          Acessar o gerador com a palavra Puxirum do ICED
         </a>
       </div>
     </div>
@@ -256,28 +245,27 @@
     <div class="container">
       <input type="text" />
 
-      <button class="save">Salvar Imagem</button>
-      <button class="share">
-        Compartilhar Imagem
-        <img src="img/share.svg" />
-      </button>
+      <button>Salvar Imagem</button>
 
       <canvas width="1080" height="1080"></canvas>
 
+      
       <smartphone>
-        CHAPA PUXIRUM DO ICED: RESISTIR E AVANÇAR 
-     
+        Somos a CHAPA PUXIRUM. 
+        <b>coliverra@gmail.com</b> ou
+        <a href="www.puxirumdoiced.com" target="_blank">
+          clicando aqui neste link do Nubank
+          <img src="../img/qrcode.svg" class="nubank" />
+        </a>
       </smartphone>
 
       <footer>
-        Acesse nossas propostas no site: 
-         <b>www.puxirumdoiced.com</b>
-        Siga nossa página no Instagram: 
+        Desenvolvido por:
 
         <a href="https://www.instagram.com/puxirum.iced/" target="_blank">
-          <img src="img/10.png" class="profile" />
-          <img src="img/instagram-logo.svg" />
-          <span><b>puxirum.</b>iced</span>
+          <img src="../img/claud.jpg" class="profile" />
+          <img src="../img/instagram-logo.svg" />
+          <span><b>claudir</b>frontend</span>
         </a>
 
       </footer>
@@ -454,38 +442,12 @@
       document.querySelector("input").value =
         names[Math.floor(Math.random() * names.length)];
 
-      document.querySelector("button.save").addEventListener("click", () => {
+      document.querySelector("button").addEventListener("click", () => {
         gtag("event", "download");
         const a = document.createElement("a");
         a.setAttribute("href", canvas.toDataURL("image/png"));
-        a.setAttribute(
-          "download",
-          document.querySelector("input").value.trim()
-        );
+        a.setAttribute("download", name);
         a.click();
-      });
-
-      document.querySelector("button.share").addEventListener("click", () => {
-        gtag("event", "share");
-
-        canvas.toBlob((blob) => {
-          const filesArray = [
-            new File(
-              [blob],
-              document.querySelector("input").value.trim() + ".jpg",
-              {
-                type: "image/jpeg",
-                lastModified: new Date().getTime(),
-              }
-            ),
-          ];
-
-          const shareData = {
-            files: filesArray,
-          };
-
-          navigator.share(shareData);
-        });
       });
 
       function roundRect(
@@ -504,20 +466,20 @@
           radius = { ...{ tl: 0, tr: 0, br: 0, bl: 0 }, ...radius };
         }
         ctx.beginPath();
-        ctx.moveTo(x + radius.tl, y);
+        ctx.moveTo(x, y);
         ctx.lineTo(x + width - radius.tr, y);
         ctx.quadraticCurveTo(x + width, y, x + width, y + radius.tr);
-        ctx.lineTo(x + width, y + height - radius.br);
-        ctx.quadraticCurveTo(
-          x + width,
-          y + height,
-          x + width - radius.br,
-          y + height
-        );
+        ctx.lineTo(x + width, y + height);
+        // ctx.quadraticCurveTo(
+        //   x + width,
+        //   y + height,
+        //   x + width - radius.br,
+        //   y + height
+        // );
         ctx.lineTo(x + radius.bl, y + height);
         ctx.quadraticCurveTo(x, y + height, x, y + height - radius.bl);
-        ctx.lineTo(x, y + radius.tl);
-        ctx.quadraticCurveTo(x, y, x + radius.tl, y);
+        // ctx.lineTo(x, y + radius.tl);
+        // ctx.quadraticCurveTo(x, y, x + radius.tl, y);
         ctx.closePath();
         ctx.fill();
       }
@@ -530,30 +492,30 @@
           context.save();
 
           context.translate(540, 348);
-          context.rotate((-2 * Math.PI) / 180);
+
+          const name = document
+            .querySelector("input")
+            .value.trim()
+            .toUpperCase();
 
           context.textBaseline = "middle";
-          context.font = "196.13px Bebas Neue";
-          const width = context.measureText(
-            document.querySelector("input").value.trim()
-          ).width;
+          context.font = "bold 146.13px Signika";
+          const width = context.measureText(name).width;
 
-          context.fillStyle = "#1ABC4C";
+          const paddingWidth = 30;
+
+          context.fillStyle = "#FFE600";
           roundRect(
             context,
-            -width / 2 - 25,
+            -width / 2 - paddingWidth,
             -184 / 2,
-            width + 25 * 2,
+            width + paddingWidth * 2,
             184,
-            21.66
+            60
           );
 
-          context.fillStyle = "white";
-          context.fillText(
-            document.querySelector("input").value.trim(),
-            -width / 2,
-            20
-          );
+          context.fillStyle = "#313131";
+          context.fillText(name, -width / 2, 15);
 
           context.restore();
 
